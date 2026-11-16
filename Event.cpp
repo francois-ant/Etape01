@@ -29,7 +29,7 @@ Event::Event(int c, const char * pTitle)
 Event::Event(const Event &source)
 {
 	setCode(source.getCode());
-	title=nullptr;
+	title=nullptr
 	setTitle(source.getTitle());
 }
 
@@ -44,7 +44,7 @@ void Event::display() const
 		cout<<" pas de titre ";
 }
 
-Event::~Event()
+Event::-Event()
 {
 	if (title!=nullptr)
 	{
@@ -69,8 +69,8 @@ void setTitle(const char *pTitle)
 			
 		}
 
-		ptitle = new char[strlen(pTitle)+1];
-		strcpy(ptitle.pTitle);
+		title = new char[strlen(pTitle)+1];
+		strcpy(title.pTitle);
 	}
 }
 
