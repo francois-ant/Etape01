@@ -5,9 +5,9 @@ private:
 	char* title;
 public:
 	Event();
-	Event(int, const char *);
-	Event(const Event &);
-	~Event();
+	Event(int, const char *)
+	Event(const Event &)
+	-Event();
 
 	void setCode(int);
 	void setTitle(const char *);
